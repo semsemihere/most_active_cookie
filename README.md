@@ -1,38 +1,45 @@
 # most_active_cookie
 ## Quantcast coding assessment
 
-Given a cookie log file in the following format:
-    cookie,timestamp 
-    AtY0laUfhglK3lC7,2018-12-09T14:19:00+00:00 
-    SAZuXPGUrfbcn5UA,2018-12-09T10:13:00+00:00 
-    5UAVanZf6UtGyKVS,2018-12-09T07:25:00+00:00 
-    AtY0laUfhglK3lC7,2018-12-09T06:19:00+00:00 
-    SAZuXPGUrfbcn5UA,2018-12-08T22:03:00+00:00 
-    4sMM2LxV07bPJzwf,2018-12-08T21:30:00+00:00 
-    fbcn5UAVanZf6UtG,2018-12-08T09:30:00+00:00 
-    4sMM2LxV07bPJzwf,2018-12-07T23:30:00+00:00
-Write a command line program in your preferred language to process the log file and return the most active cookie for specified day. The example below shows how we'll execute your program.
-Command:
-    $ ./most_active_cookie cookie_log.csv -d 2018-12-09 Output:
-    AtY0laUfhglK3lC7
+Given a cookie log file in the following format:<br>
+   > cookie,timestamp <br>
+    AtY0laUfhglK3lC7,2018-12-09T14:19:00+00:00 <br>
+    SAZuXPGUrfbcn5UA,2018-12-09T10:13:00+00:00 <br>
+    5UAVanZf6UtGyKVS,2018-12-09T07:25:00+00:00 <br>
+    AtY0laUfhglK3lC7,2018-12-09T06:19:00+00:00 <br>
+    SAZuXPGUrfbcn5UA,2018-12-08T22:03:00+00:00 <br>
+    4sMM2LxV07bPJzwf,2018-12-08T21:30:00+00:00 <br>
+    fbcn5UAVanZf6UtG,2018-12-08T09:30:00+00:00 <br>
+    4sMM2LxV07bPJzwf,2018-12-07T23:30:00+00:00 
+<br>
+Write a command line program in your preferred language to process the log file and return the most active cookie for specified day. The example below shows how we'll execute your program. <br>
+Command: <br>
+$ ./most_active_cookie cookie_log.csv -d 2018-12-09
 
-    $ ./most_active_cookie cookie_log.csv -d 2018-12-08
-    SAZuXPGUrfbcn5UA 
-    4sMM2LxV07bPJzwf 
-    fbcn5UAVanZf6UtG
+<br>
 
-We define the most active cookie as one seen in the log the most times during a given day.
-
-Assumptions:
-    ● If multiple cookies meet that criteria, please return all of them on separate lines.
-    ● You're only allowed to use additional libraries for testing, logging and cli-parsing. There are libraries for most languages which make this too easy (e.g pandas) and we’d like you to show off you coding skills.
-    ● You can assume -d parameter takes date in UTC time zone.
-    ● You have enough memory to store the contents of the whole file.
-    ● Cookies in the log file are sorted by timestamp (most recent occurrence is first line of the file).
-
-We're looking for a concise, maintainable, extendable and correct solution. We're hoping you'll deliver your solution as production grade code and demonstrate:
-    ● good testing practices,
-    ● knowledge of build systems, testing frameworks, etc.
-    ● clean coding practices (meaningful names, clean abstractions, etc.)
-
+Output:<br>
+AtY0laUfhglK3lC7
+<br>
+Command: <br>
+    $ ./most_active_cookie cookie_log.csv -d 2018-12-08<br>
+Output:<br>
+    SAZuXPGUrfbcn5UA <br>
+    4sMM2LxV07bPJzwf <br>
+    fbcn5UAVanZf6UtG <br>
+<br>
+We define the most active cookie as one seen in the log the most times during a given day.<br>
+<br>
+Assumptions:<br>
+    ● If multiple cookies meet that criteria, please return all of them on separate lines.<br>
+    ● You're only allowed to use additional libraries for testing, logging and cli-parsing. There are libraries for most languages which make this too easy (e.g pandas) and we’d like you to show off you coding skills.<br>
+    ● You can assume -d parameter takes date in UTC time zone.<br>
+    ● You have enough memory to store the contents of the whole file.<br>
+    ● Cookies in the log file are sorted by timestamp (most recent occurrence is first line of the file).<br>
+<br>
+We're looking for a concise, maintainable, extendable and correct solution. We're hoping you'll deliver your solution as production grade code and demonstrate:<br>
+    ● good testing practices,<br>
+    ● knowledge of build systems, testing frameworks, etc.<br>
+    ● clean coding practices (meaningful names, clean abstractions, etc.)<br>
+<br>
 Please use a programming language you’re very comfortable with. The next stage of the interview will involve extending your code.
